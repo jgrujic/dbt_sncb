@@ -1,0 +1,6 @@
+audiance_measurment/target/
+dbt_packages/
+logs/
+.idea
+.venv
+*~
