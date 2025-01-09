@@ -1,15 +1,14 @@
 #!/bin/bash  
 
 mkdir /home/gitpod/.dbt/
-echo "audiance_measurment:
+echo "demo_databrick:
   outputs:
-   dev:
-      host: adb-2350446231070354.14.azuredatabricks.net
-      http_path: /sql/protocolv1/o/2350446231070354/1217-123614-bgsphfhv
-      schema: default
-      threads: 1
+    dev:
       type: databricks
-      auth_type: oauth
+      schema: default
+      host: adb-3006675947346238.18.azuredatabricks.net
+      http_path: /sql/1.0/warehouses/719f4c0ddd74a1c7
+      token: <token_from_keyvault>
   target: dev
-  target: dev" > /home/gitpod/.dbt/profiles.yml
+  " > /home/gitpod/.dbt/profiles.yml
 
