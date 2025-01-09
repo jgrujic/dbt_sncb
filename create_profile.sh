@@ -1,6 +1,5 @@
-#!/bin/bash  
-rm -r /home/gitpod/.dbt
-mkdir /home/gitpod/.dbt/
+#!/bin/bash
+mkdir -p /home/gitpod/.dbt/
 echo "vista:
   outputs:
     dev:

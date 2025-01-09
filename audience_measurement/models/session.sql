@@ -2,7 +2,7 @@ WITH timestamp_events AS (
          SELECT
                 users as users,
                 channel as channel,
-                time as timestamp
+                timestamp as timestamp
          FROM {{ source('training', 'timestamps') }}
          WHERE timestamp >= '{{ var("date") }}'
            AND timestamp < dateadd(day, {{ var("num_days") }}, '{{ var("date") }}')
